@@ -26,7 +26,7 @@ public class OrdersApiTestSteps {
                 .contentType(ContentType.JSON)
                 .param("postId", "2")
                 .when()
-                .get("https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5")
+                .get("https://api.bank.ua/papi/pubinfo?json&exchange&coursid=9")
                         .then()
                         .extract().response();
     }
