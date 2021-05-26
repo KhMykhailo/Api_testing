@@ -26,7 +26,7 @@ public class OrdersApiTestSteps {
                 .contentType(ContentType.JSON)
                 .param("postId", "2")
                 .when()
-                .get("https://api.bank.ua/papi/pubinfo?json&exchange&coursid=9")
+                .get("https://bank.gov.ua/NBUStatService/v1/statdirectory/kursf?date=YYYYMM01&period=m")
                         .then()
                         .extract().response();
     }
